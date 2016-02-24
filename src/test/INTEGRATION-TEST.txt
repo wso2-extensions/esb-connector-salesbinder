@@ -20,7 +20,7 @@ STEPS:
 
  2.   Deploy relevant patches, if applicable.
       If required add the X.509 certificate from https://[subdomain].salesbinder.com (follow step 4 to create a sub domain) to the client-truststore.jks of the ESB located in <ESB_HOME>/repository/resources/security folder
-      and wso2carbon.jks located in <SALESBINDER_CONNECTOR_HOME>/salesbinder-connector/salesbinder-connector-1.0.0/org.wso2.carbon.connector/src/test/resources/keystores/products.
+      and wso2carbon.jks located in <SALESBINDER_CONNECTOR_HOME>/src/test/resources/keystores/products.
 
  3.   Navigate to location "<ESB_HOME>/repository/conf/axis2" and add/uncomment following lines in "axis2.xml".
    
@@ -44,7 +44,7 @@ STEPS:
    iii)  Go to "Locations & Zones" sub-category under "Inventory" in Sales Binder account dashboard, select the created locations (in step (5)ii) and extract the IDs of both locations from the URL.
    iv)   Navigate to "https://[subdomain].salesbinder.com/items" and create two new inventory items using a single location (use the location in step(5)ii).
  
- 6.   Update the Sales Binder properties file at location "<SALES_BINDER_CONNECTOR_HOME>/salesbinder-connector/salesbinder-connector-2.0.0/org.wso2.carbon.connector/src/test/resources/artifacts/ESB/connector/config" as below.
+ 6.   Update the Sales Binder properties file at location "<SALES_BINDER_CONNECTOR_HOME>/src/test/resources/artifacts/ESB/connector/config" as below.
    i)       apiUrl                  - The URL of Sales Binder api (https://[subdomain].salesbinder.com).
    ii)      apiKey                  - The API key obtained in step(4) iii) which gives access to the API.
    iii)     contactEmail            - Email address of the contact to be created with mandatory parameters.
