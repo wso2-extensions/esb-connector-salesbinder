@@ -46,7 +46,7 @@ public class SalesbinderConnectorIntegrationTest extends ConnectorIntegrationTes
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("salesbinder-connector-1.0.0");
+        init("salesbinder-connector-1.0.1-SNAPSHOT");
 
         esbRequestHeadersMap = new HashMap<String, String>();
         apiRequestHeadersMap = new HashMap<String, String>();
